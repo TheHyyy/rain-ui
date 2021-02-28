@@ -1,15 +1,16 @@
 <template>
-  <div>hi</div>
-  <Rain />
+  <div>
+    hi | <router-link to="/">到我的rain1</router-link>|<router-link to="/x"
+      >到我的rain2</router-link
+    >
+  </div>
+  <hr />
+  <router-view></router-view>
 </template>
 
 <script>
-import Rain from './components/Rain.vue'
-
 export default {
   name: 'App',
-  components: {
-    Rain,
-  },
+  components: {},
 }
 </script>
