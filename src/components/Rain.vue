@@ -1,5 +1,5 @@
 <template>
-  <div>我的第一个杀杀杀Vue3组件</div>
+  <div>我的第一个杀杀3杀Vue3组件</div>
 </template>
 
 <script>
