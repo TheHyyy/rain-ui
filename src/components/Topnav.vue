@@ -1,6 +1,8 @@
 <template>
   <div class="topnav">
-    <router-link to="/"> <div class="logo">LOGO</div></router-link>
+    <!-- <router-link to="/"> -->
+    <div class="logo" @click="toggleMenu">LOGO</div>
+    <!-- </router-link> -->
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
@@ -9,7 +11,18 @@
 </template>
 
 <script lang="ts">
-export default {}
+import { inject, Ref } from 'vue'
+export default {
+  setup() {
+    const menuVisible = inject<Ref<boolean>>('xxx') //get
+    console.log(`Topnav的${menuVisible.value}`)
+
+    const toggleMenu = () => {
+      menuVisible.value = !menuVisible.value
+    }
+    return { toggleMenu }
+  },
+}
 </script>
 <style lang="scss" scoped>
 .topnav {
