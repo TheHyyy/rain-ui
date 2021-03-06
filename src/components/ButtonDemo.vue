@@ -1,15 +1,19 @@
 <template>
-  <div>button噢</div>
+  <div>Button示例</div>
+  <h1>示例</h1>
+  <div>
+    <Button @click="onClick" @focus="onClick" @mouseover="onClick">你好</Button>
+  </div>
 </template>
 
-<script>
+<script lang="ts">
+import Button from '../lib/Button.vue'
 export default {
-  data() {
-    return {
-      msg: '',
-    }
+  components: { Button },
+  setup() {
+    const onClick = () => {}
+    return { onClick }
   },
-  methods: {},
 }
 </script>
 
