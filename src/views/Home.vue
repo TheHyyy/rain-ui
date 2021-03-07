@@ -3,7 +3,8 @@
     <Topnav />
     <div class="banner">
       <h1>Rain-UI</h1>
-      <h2>一个牛逼的 UI 框架</h2>
+      <h2>一个新人不完善的UI</h2>
+      <h3>希望多多指正</h3>
       <p class="actions">
         <a href="https://github.com/TheHyyy/rain-ui">GitHub</a>
         <router-link to="/doc"> <a>开始</a></router-link>
@@ -32,7 +33,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: lightgreen;
+  background: skyblue;
   > .actions {
     padding: 8px 0;
     a {

@@ -1,15 +1,13 @@
 <template>
   <div>Dialog噢</div>
+  <h1>示例1</h1>
+  <Dialog></Dialog>
 </template>
 
-<script>
+<script lang="ts">
+import Dialog from '../lib/Dialog.vue'
 export default {
-  data() {
-    return {
-      msg: '',
-    }
-  },
-  methods: {},
+  components: { Dialog },
 }
 </script>
 
