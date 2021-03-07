@@ -1,23 +1,28 @@
 <template>
-  <div class="rain-dialog-overlay"></div>
-  <div class="rain-dialog-wrapper">
-    <div class="rain-dialog">
-      <header>标题 <span class="rain-dialog-close"></span></header>
-      <main>
-        <p>第一行字</p>
-        <p>第二行字</p>
-      </main>
-      <footer>
-        <Button level="main">OK</Button>
-        <Button>Cancel</Button>
-      </footer>
+  <template v-if="visible">
+    <div class="rain-dialog-overlay"></div>
+    <div class="rain-dialog-wrapper">
+      <div class="rain-dialog">
+        <header>标题 <span class="rain-dialog-close"></span></header>
+        <main>
+          <p>第一行字</p>
+          <p>第二行字</p>
+        </main>
+        <footer>
+          <Button level="main">OK</Button>
+          <Button>Cancel</Button>
+        </footer>
+      </div>
     </div>
-  </div>
+  </template>
 </template>
 
 <script lang="ts">
 import Button from './Button.vue'
 export default {
+  props: {
+    visible: { type: Boolean, default: false },
+  },
   components: { Button },
 }
 </script>
