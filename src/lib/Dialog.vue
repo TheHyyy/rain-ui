@@ -1,21 +1,25 @@
 <template>
   <template v-if="visible">
-    <div class="rain-dialog-overlay" @click="onClickOverlay"></div>
-    <div class="rain-dialog-wrapper">
-      <div class="rain-dialog">
-        <header>
-          标题 <span @click="close" class="rain-dialog-close"></span>
-        </header>
-        <main>
-          <p>第一行字</p>
-          <p>第二行字</p>
-        </main>
-        <footer>
-          <Button level="main" @click="ok">OK</Button>
-          <Button @click="close" @click="cancel">Cancel</Button>
-        </footer>
+    <Teleport to="body">
+      <div class="rain-dialog-overlay" @click="onClickOverlay"></div>
+      <div class="rain-dialog-wrapper">
+        <div class="rain-dialog">
+          <header>
+            <slot name="title" /><span
+              @click="close"
+              class="rain-dialog-close"
+            ></span>
+          </header>
+          <main>
+            <slot name="content" />
+          </main>
+          <footer>
+            <Button level="main" @click="ok">OK</Button>
+            <Button @click="close" @click="cancel">Cancel</Button>
+          </footer>
+        </div>
       </div>
-    </div>
+    </Teleport>
   </template>
 </template>
 
