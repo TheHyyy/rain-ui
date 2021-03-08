@@ -15,7 +15,7 @@
           </main>
           <footer>
             <Button level="main" @click="ok">OK</Button>
-            <Button @click="close" @click="cancel">Cancel</Button>
+            <Button @click="cancel">Cancel</Button>
           </footer>
         </div>
       </div>

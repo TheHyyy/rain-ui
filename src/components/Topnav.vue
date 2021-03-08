@@ -1,13 +1,15 @@
 <template>
   <div class="topnav">
-    <!-- <router-link to="/"> -->
-    <div class="logo">LOGO</div>
-    <!-- </router-link> -->
+    <div class="logo">
+      <svg class="icon">
+        <use xlink:href="#icon-yu--copy"></use>
+      </svg>
+    </div>
     <ul class="menu">
       <li>菜单1</li>
       <li>菜单2</li>
     </ul>
-    <span @click="toggleMenu" class="toggleAside"></span>
+    <span class="toggleAside" @click="toggleMenu"></span>
   </div>
 </template>
 
@@ -26,8 +28,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+$color: #28d1c9;
+
 .topnav {
-  background: pink;
+  color: $color;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -40,6 +44,10 @@ export default {
   > .logo {
     max-width: 6em;
     margin-right: auto;
+    > svg {
+      width: 32px;
+      height: 32px;
+    }
   }
   > .menu {
     display: flex;
