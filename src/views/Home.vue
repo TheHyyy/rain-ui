@@ -2,10 +2,12 @@
   <div class="topnavAndBanner">
     <Topnav />
     <div class="banner">
-      <h1>Rain-UI</h1>
-      <h2>一个新人不完善的UI</h2>
+      <h1>Raining-UI</h1>
+      <h2>基于Vue3.0的UI框架</h2>
       <p class="actions">
-        <a href="https://github.com">GitHub</a>
+        <a href="https://github.com/TheHyyy/rain-ui" target="view_window"
+          >GitHub</a
+        >
         <router-link to="/doc">开始</router-link>
       </p>
     </div>
@@ -51,14 +53,14 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-$green: #02bcb0;
+$blue: #668fbf;
 $border-radius: 4px;
-$color: #28d1c9;
+$color: #567fb0;
 .topnavAndBanner {
   background: linear-gradient(
-    145deg,
-    rgba(227, 255, 253, 1) 0%,
-    rgba(183, 233, 230, 1) 100%
+    151deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(115, 157, 207, 1) 100%
   );
   clip-path: ellipse(80% 60% at 50% 40%);
 }
@@ -120,7 +122,7 @@ $color: #28d1c9;
     padding: 8px 0;
     a {
       margin: 0 8px;
-      background: $green;
+      background: $blue;
       color: white;
       display: inline-block;
       padding: 8px 24px;
