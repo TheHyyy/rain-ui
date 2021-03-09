@@ -54,8 +54,8 @@ $color: #274b75;
     max-width: 6em;
     margin-right: auto;
     > svg {
-      width: 32px;
-      height: 32px;
+      width: 48px;
+      height: 48px;
     }
   }
   > .menu {

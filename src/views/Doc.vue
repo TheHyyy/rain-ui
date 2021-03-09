@@ -23,6 +23,9 @@
           <li>
             <router-link to="/doc/tabs">Tabs 组件</router-link>
           </li>
+          <li>
+            <router-link to="/doc/hy">未完待续...</router-link>
+          </li>
         </ol>
       </aside>
       <main>
@@ -75,15 +78,15 @@ $aside-index: 10;
   }
 }
 aside {
-  border: 2px solid #567fb0;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 1) 7%,
-    rgba(86, 127, 176, 1) 7%,
-    rgba(86, 127, 176, 1) 100%
-  );
-  // background: #567fb0;
+  border-right: 2px solid #567fb0;
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   rgba(255, 255, 255, 1) 7%,
+  //   rgba(86, 127, 176, 1) 7%,
+  //   rgba(86, 127, 176, 1) 100%
+  // );
+  background: #346094;
   color: white;
   width: 150px;
   padding: 16px 0;
@@ -99,6 +102,10 @@ aside {
   }
   > ol {
     > li {
+      > :hover {
+        background: #739dcf;
+        text-decoration: none;
+      }
       > a {
         display: block;
         padding: 4px 16px;
