@@ -27,6 +27,10 @@
             <router-link to="/doc/hy">未完待续...</router-link>
           </li>
         </ol>
+        <h2>其他</h2>
+        <ol>
+          <li><router-link to="/doc/blog">博客</router-link></li>
+        </ol>
       </aside>
       <main>
         <router-view></router-view>
@@ -108,7 +112,7 @@ aside {
       }
       > a {
         display: block;
-        padding: 4px 16px;
+        padding: 4px 28px;
       }
       .router-link-active {
         // background: white;
