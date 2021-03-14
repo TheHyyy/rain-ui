@@ -5,7 +5,6 @@
       :value="value || value == '' ? value : modelValue"
       type="text"
       :disabled="disabled"
-      :readonly="readonly"
       @change="inputval"
       @input="inputval"
       @focus="inputBlur"
@@ -18,7 +17,6 @@
   </div>
 </template>
 <script lang="ts">
-import { readonly, reactive } from 'vue'
 export default {
   name: 'rain-input',
   props: {
@@ -97,8 +95,7 @@ $red: #f1453d;
     &:focus {
       box-shadow: inset 0 1px 3px rgba(#ccc, 0.8);
     }
-    &[disabled],
-    &[readonly] {
+    &[disabled] {
       border-color: #ccc;
       color: #ccc;
       cursor: not-allowed;

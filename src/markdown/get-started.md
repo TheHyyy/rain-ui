@@ -3,8 +3,8 @@
 
 然后在你的代码中写入下面的代码
 
-```
-import {Button, Tabs, Switch, Dialog} from "raining-ui"
+```js
+import {Button, Tabs, Switch, Dialog, Input} from "raining-ui"
 ```
 
 就可以使用我提供的组件了。
@@ -13,16 +13,16 @@ import {Button, Tabs, Switch, Dialog} from "raining-ui"
 
 代码示例：
 
-```
+```js
 <template>
   <div>
     <Button>按钮</Button>
   </div>
 </template>
 <script>
-import {Button, Tabs, Switch, Dialog} from "raining-ui"
+import {Button, Tabs, Switch, Dialog, Input} from "raining-ui"
 export default {
-  components: {Button}
+  components: {Button,Tabs, Switch, Dialog, Input}
 }
 </script>
 ```
