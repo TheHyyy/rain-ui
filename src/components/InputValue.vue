@@ -3,7 +3,7 @@
 </demo>
 <template>
   <div>
-    <Input v-model:value="val" v-model="blurval"></Input>
+    <Input></Input>
   </div>
 </template>
 <script lang="ts">
